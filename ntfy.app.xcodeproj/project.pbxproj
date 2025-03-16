@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5E8D9A032D8702730017E702 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 5E8D99FF2D8702730017E702 /* .swiftlint.yml */; };
 		5E8D9A182D8705FF0017E702 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5E8D9A172D8705F80017E702 /* .gitignore */; };
+		5E8D9A1A2D872C1E0017E702 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5E8D9A192D872C1A0017E702 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		5E8D99FF2D8702730017E702 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		5E8D9A172D8705F80017E702 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		5E8D9A192D872C1A0017E702 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5EB664282D7ADC3B00C8DE33 /* ntfy.app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ntfy.app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB6643A2D7ADC3D00C8DE33 /* ntfy.appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ntfy.appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -62,6 +64,7 @@
 		5EB6641F2D7ADC3B00C8DE33 = {
 			isa = PBXGroup;
 			children = (
+				5E8D9A192D872C1A0017E702 /* LICENSE */,
 				5E8D99FF2D8702730017E702 /* .swiftlint.yml */,
 				5E8D9A172D8705F80017E702 /* .gitignore */,
 				5EB6642A2D7ADC3B00C8DE33 /* ntfy.app */,
@@ -177,6 +180,7 @@
 			files = (
 				5E8D9A182D8705FF0017E702 /* .gitignore in Resources */,
 				5E8D9A032D8702730017E702 /* .swiftlint.yml in Resources */,
+				5E8D9A1A2D872C1E0017E702 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
