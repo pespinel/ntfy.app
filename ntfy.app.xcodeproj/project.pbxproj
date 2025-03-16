@@ -6,15 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5E8D9A032D8702730017E702 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 5E8D99FF2D8702730017E702 /* .swiftlint.yml */; };
+		5E8D9A182D8705FF0017E702 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5E8D9A172D8705F80017E702 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5EB6643B2D7ADC3D00C8DE33 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5EB664202D7ADC3B00C8DE33 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5EB664272D7ADC3B00C8DE33;
-			remoteInfo = ntfy.app;
-		};
-		5EB664452D7ADC3D00C8DE33 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5EB664202D7ADC3B00C8DE33 /* Project object */;
 			proxyType = 1;
@@ -24,9 +22,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E8D99FF2D8702730017E702 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		5E8D9A172D8705F80017E702 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		5EB664282D7ADC3B00C8DE33 /* ntfy.app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ntfy.app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB6643A2D7ADC3D00C8DE33 /* ntfy.appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ntfy.appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EB664442D7ADC3D00C8DE33 /* ntfy.appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ntfy.appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -38,11 +37,6 @@
 		5EB6643D2D7ADC3D00C8DE33 /* ntfy.appTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ntfy.appTests;
-			sourceTree = "<group>";
-		};
-		5EB664472D7ADC3D00C8DE33 /* ntfy.appUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ntfy.appUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -62,22 +56,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5EB664412D7ADC3D00C8DE33 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		5EB6641F2D7ADC3B00C8DE33 = {
 			isa = PBXGroup;
 			children = (
+				5E8D99FF2D8702730017E702 /* .swiftlint.yml */,
+				5E8D9A172D8705F80017E702 /* .gitignore */,
 				5EB6642A2D7ADC3B00C8DE33 /* ntfy.app */,
 				5EB6643D2D7ADC3D00C8DE33 /* ntfy.appTests */,
-				5EB664472D7ADC3D00C8DE33 /* ntfy.appUITests */,
 				5EB664292D7ADC3B00C8DE33 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +75,6 @@
 			children = (
 				5EB664282D7ADC3B00C8DE33 /* ntfy.app.app */,
 				5EB6643A2D7ADC3D00C8DE33 /* ntfy.appTests.xctest */,
-				5EB664442D7ADC3D00C8DE33 /* ntfy.appUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +93,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5EF9DCCF2D816B1100E82BD3 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				5EB6642A2D7ADC3B00C8DE33 /* ntfy.app */,
@@ -140,29 +128,6 @@
 			productReference = 5EB6643A2D7ADC3D00C8DE33 /* ntfy.appTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5EB664432D7ADC3D00C8DE33 /* ntfy.appUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5EB664542D7ADC3D00C8DE33 /* Build configuration list for PBXNativeTarget "ntfy.appUITests" */;
-			buildPhases = (
-				5EB664402D7ADC3D00C8DE33 /* Sources */,
-				5EB664412D7ADC3D00C8DE33 /* Frameworks */,
-				5EB664422D7ADC3D00C8DE33 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5EB664462D7ADC3D00C8DE33 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				5EB664472D7ADC3D00C8DE33 /* ntfy.appUITests */,
-			);
-			name = ntfy.appUITests;
-			packageProductDependencies = (
-			);
-			productName = ntfy.appUITests;
-			productReference = 5EB664442D7ADC3D00C8DE33 /* ntfy.appUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -180,10 +145,6 @@
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 5EB664272D7ADC3B00C8DE33;
 					};
-					5EB664432D7ADC3D00C8DE33 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 5EB664272D7ADC3B00C8DE33;
-					};
 				};
 			};
 			buildConfigurationList = 5EB664232D7ADC3B00C8DE33 /* Build configuration list for PBXProject "ntfy.app" */;
@@ -195,6 +156,9 @@
 			);
 			mainGroup = 5EB6641F2D7ADC3B00C8DE33;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5EF9DCC92D80E96700E82BD3 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5EB664292D7ADC3B00C8DE33 /* Products */;
 			projectDirPath = "";
@@ -202,7 +166,6 @@
 			targets = (
 				5EB664272D7ADC3B00C8DE33 /* ntfy.app */,
 				5EB664392D7ADC3D00C8DE33 /* ntfy.appTests */,
-				5EB664432D7ADC3D00C8DE33 /* ntfy.appUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -212,17 +175,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E8D9A182D8705FF0017E702 /* .gitignore in Resources */,
+				5E8D9A032D8702730017E702 /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5EB664382D7ADC3D00C8DE33 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5EB664422D7ADC3D00C8DE33 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,13 +204,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5EB664402D7ADC3D00C8DE33 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -261,10 +212,9 @@
 			target = 5EB664272D7ADC3B00C8DE33 /* ntfy.app */;
 			targetProxy = 5EB6643B2D7ADC3D00C8DE33 /* PBXContainerItemProxy */;
 		};
-		5EB664462D7ADC3D00C8DE33 /* PBXTargetDependency */ = {
+		5EF9DCCF2D816B1100E82BD3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5EB664272D7ADC3B00C8DE33 /* ntfy.app */;
-			targetProxy = 5EB664452D7ADC3D00C8DE33 /* PBXContainerItemProxy */;
+			productRef = 5EF9DCCE2D816B1100E82BD3 /* SwiftLintBuildToolPlugin */;
 		};
 /* End PBXTargetDependency section */
 
@@ -399,11 +349,14 @@
 				DEVELOPMENT_TEAM = L2TXADM8X5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Ntfy.app;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,11 +381,14 @@
 				DEVELOPMENT_TEAM = L2TXADM8X5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Ntfy.app;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +410,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L2TXADM8X5;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pespinel.ntfy-appTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -473,7 +429,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L2TXADM8X5;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pespinel.ntfy-appTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -481,40 +437,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ntfy.app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ntfy.app";
-			};
-			name = Release;
-		};
-		5EB664552D7ADC3D00C8DE33 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L2TXADM8X5;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pespinel.ntfy-appUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ntfy.app;
-			};
-			name = Debug;
-		};
-		5EB664562D7ADC3D00C8DE33 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L2TXADM8X5;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pespinel.ntfy-appUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ntfy.app;
 			};
 			name = Release;
 		};
@@ -548,16 +470,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5EB664542D7ADC3D00C8DE33 /* Build configuration list for PBXNativeTarget "ntfy.appUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5EB664552D7ADC3D00C8DE33 /* Debug */,
-				5EB664562D7ADC3D00C8DE33 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5EF9DCC92D80E96700E82BD3 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.58.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5EF9DCCE2D816B1100E82BD3 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5EF9DCC92D80E96700E82BD3 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5EB664202D7ADC3B00C8DE33 /* Project object */;
 }

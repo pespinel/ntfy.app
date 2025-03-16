@@ -1,19 +1,10 @@
-//
-//  ntfy_appApp.swift
-//  ntfy.app
-//
-//  Created by Pablo Espinel on 7/3/25.
-//
-
 import SwiftUI
 import SwiftData
 
 @main
-struct ntfy_appApp: App {
+struct NtfyApp: App {
     var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
+        let schema = Schema([Topic.self])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
         do {
@@ -25,8 +16,7 @@ struct ntfy_appApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-        }
-        .modelContainer(sharedModelContainer)
+            MainView()
+        }.modelContainer(sharedModelContainer)
     }
 }
