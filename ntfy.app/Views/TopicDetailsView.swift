@@ -59,6 +59,6 @@ struct TopicDetailsView: View {
 
 #Preview {
     NavigationView {
-        TopicDetailsView(topic: Topic(name: "test"))
+        TopicDetailsView(topic: Topic(name: "CPU"))
     }
 }

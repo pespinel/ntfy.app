@@ -10,7 +10,6 @@ class TopicDetailsViewModel: ObservableObject {
 
     init(topic: String) {
         self.topic = topic
-        loadMessages()
         subscribeToMessages()
     }
 
@@ -49,17 +48,12 @@ class TopicDetailsViewModel: ObservableObject {
         }
     }
 
-    private func loadMessages() {
-        if let data = UserDefaults.standard.data(forKey: "messages_\(topic)"),
-           let savedMessages = try? JSONDecoder().decode([Message].self, from: data) {
-            messages = savedMessages
-        }
-    }
-
     private func mergeMessages(_ newMessages: [Message]) {
         let existingMessageIDs = Set(messages.map { $0.id })
         let uniqueNewMessages = newMessages.filter { !existingMessageIDs.contains($0.id) }
-        messages.append(contentsOf: uniqueNewMessages)
-        saveMessages()
+        if !uniqueNewMessages.isEmpty {
+            messages.append(contentsOf: uniqueNewMessages)
+            saveMessages()
+        }
     }
 }
